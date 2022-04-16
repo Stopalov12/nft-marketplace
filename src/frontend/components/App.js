@@ -44,7 +44,7 @@ function App() {
   };
   return (
     <BrowserRouter>
-      <div>
+      <div className="App">
         <Navigation web3Handler={web3Handler} account={account} />
         {loading ? (
           <div
@@ -60,10 +60,34 @@ function App() {
           </div>
         ) : (
           <Routes>
-            <Route path="/" element={<Home marketplace={marketplace} nft={nft}/>} />
-            <Route path="/create " />
-            <Route path="/my-listed-items" />
-            <Route path="/my-purchases" />
+            <Route
+              path="/"
+              element={<Home marketplace={marketplace} nft={nft} />}
+            />
+            <Route
+              path="/create"
+              element={<Create marketplace={marketplace} nft={nft} />}
+            />
+            <Route
+              path="/my-listed-items"
+              element={
+                <MyListedItems
+                  marketplace={marketplace}
+                  nft={nft}
+                  account={account}
+                />
+              }
+            />
+            <Route
+              path="/my-purchases"
+              element={
+                <MyPurchases
+                  marketplace={marketplace}
+                  nft={nft}
+                  account={account}
+                />
+              }
+            />
           </Routes>
         )}
       </div>

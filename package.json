@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
-    "hardhat": "^2.9.3"
+    "hardhat": "^2.9.3",
+    "ipfs-api": "^18.1.1"
   }
 }
