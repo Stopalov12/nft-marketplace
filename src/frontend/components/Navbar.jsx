@@ -6,7 +6,7 @@ const Navigation = ({ web3Handler, account }) => {
   return (
     <Navbar expand="lg" bg="secondary" variant="dark">
       <Container>
-        <Navbar.Brand href="http://www.dappuniversity.com/bootcamp">
+        <Navbar.Brand href="https://github.com/Stopalov12">
           <img src={market} width="40" height="40" className="" alt="" />
           &nbsp; DApp NFT Marketplace
         </Navbar.Brand>
